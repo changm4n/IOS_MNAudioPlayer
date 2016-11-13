@@ -12,6 +12,9 @@
 		37BC23991DD8881F003D354B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC23971DD8881F003D354B /* Main.storyboard */; };
 		37BC239B1DD8881F003D354B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC239A1DD8881F003D354B /* Assets.xcassets */; };
 		37BC239E1DD8881F003D354B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC239C1DD8881F003D354B /* LaunchScreen.storyboard */; };
+		37BC23A61DD88836003D354B /* MNAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23A51DD88836003D354B /* MNAudioPlayer.swift */; };
+		37BC23A91DD88AE2003D354B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BC23A81DD88AE2003D354B /* AVFoundation.framework */; };
+		37BC23AB1DD8A118003D354B /* overtime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37BC23AA1DD8A118003D354B /* overtime.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		37BC239A1DD8881F003D354B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37BC239D1DD8881F003D354B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37BC239F1DD8881F003D354B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37BC23A51DD88836003D354B /* MNAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNAudioPlayer.swift; sourceTree = "<group>"; };
+		37BC23A81DD88AE2003D354B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37BC23AA1DD8A118003D354B /* overtime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = overtime.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BC23A91DD88AE2003D354B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				37BC23921DD8881F003D354B /* MNAudioPlayer */,
 				37BC23911DD8881F003D354B /* Products */,
+				37BC23A71DD88AE1003D354B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +64,22 @@
 			children = (
 				37BC23931DD8881F003D354B /* AppDelegate.swift */,
 				37BC23951DD8881F003D354B /* ViewController.swift */,
+				37BC23A51DD88836003D354B /* MNAudioPlayer.swift */,
 				37BC23971DD8881F003D354B /* Main.storyboard */,
 				37BC239A1DD8881F003D354B /* Assets.xcassets */,
 				37BC239C1DD8881F003D354B /* LaunchScreen.storyboard */,
 				37BC239F1DD8881F003D354B /* Info.plist */,
+				37BC23AA1DD8A118003D354B /* overtime.mp3 */,
 			);
 			path = MNAudioPlayer;
+			sourceTree = "<group>";
+		};
+		37BC23A71DD88AE1003D354B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37BC23A81DD88AE2003D354B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37BC239E1DD8881F003D354B /* LaunchScreen.storyboard in Resources */,
+				37BC23AB1DD8A118003D354B /* overtime.mp3 in Resources */,
 				37BC239B1DD8881F003D354B /* Assets.xcassets in Resources */,
 				37BC23991DD8881F003D354B /* Main.storyboard in Resources */,
 			);
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BC23A61DD88836003D354B /* MNAudioPlayer.swift in Sources */,
 				37BC23961DD8881F003D354B /* ViewController.swift in Sources */,
 				37BC23941DD8881F003D354B /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47RZ4GF77T;
 				INFOPLIST_FILE = MNAudioPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MN.MNAudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47RZ4GF77T;
 				INFOPLIST_FILE = MNAudioPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MN.MNAudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
