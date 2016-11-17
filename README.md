@@ -7,7 +7,7 @@
 * 저장된 Preset들을 Time interval마다  **실시간 재생에 순차적으로 적용** 
 
 ## Requirements
-* IOS 8.0+
+* IOS 9.3+
 * Swift 3
 
 ## How to use this sample
